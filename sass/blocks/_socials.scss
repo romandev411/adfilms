@@ -1,0 +1,39 @@
+.socials {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.socials__item:not(:last-child) {
+    margin-right: 73px;
+}
+
+.socials__link {
+    display: block;
+    width: 24px;
+    height: 24px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+    color: $main-color;
+    transition: color $anim;
+
+    @include hover {
+        &:hover,
+        &:focus {
+            color: #fff;
+        }
+    }
+
+    &:active {
+        opacity: .8;
+    }
+}
+
+.socials__ico {
+    display: block;
+    width: 100%;
+    height: 100%;
+}

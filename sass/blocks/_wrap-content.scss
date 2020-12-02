@@ -1,0 +1,65 @@
+.wrap-content {
+    position: relative;
+    border-radius: 12px;
+    background-image: radial-gradient(114.67% 205.46% at -26.33% -29.8%, #32353c 0%, #1f2227 100%);
+    box-shadow: 2px 20px 32px 10px rgba(0, 0, 0, .18);
+
+    @include landscape {
+        position: relative;
+        z-index: 1;
+    }
+
+    @include media-md {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.wrap-content__decor-top {
+    position: absolute;
+    bottom: 100%;
+    right: 11px;
+    width: 200px;
+    height: 180px;
+    object-fit: contain;
+    object-position: bottom;
+
+    @include media-xl {
+        width: 140px;
+    }
+
+    @include landscape {
+        display: none;
+    }
+    
+    @include media-md {
+        display: none;
+    }
+}
+
+.wrap-content__decor-bot {
+    position: absolute;
+    top: calc(100% - 32px);
+    left: -198px;
+    width: 365px;
+    height: 214px;
+    object-fit: contain;
+    object-position: top;
+
+    @include media-max {
+        left: -100px;
+    }
+
+    @include media-xl {
+        width: 255px;
+        left: 0;
+    }
+
+    @include landscape {
+        display: none;
+    }
+    
+    @include media-md {
+        display: none;
+    }
+}

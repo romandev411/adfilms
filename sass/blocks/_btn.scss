@@ -1,0 +1,34 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 54px;
+    padding: 0 8px;
+    border: 2px solid #0094ff;
+    border-radius: 100px;
+    color: #0094ff;
+    font-size: $main-font-size;
+    letter-spacing: $main-letter-spacing;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    transition: background-color $anim,
+        color $anim;
+
+    @include hover {
+        &:hover,
+        &:focus {
+            background-color: #0094ff;
+            color: #fff;
+        }
+    }
+
+    &:active {
+        background-color: #0463d2;
+        border-color: #0463d2;
+        color: #fff;
+        transition: none;
+    }
+}

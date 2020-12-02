@@ -1,0 +1,170 @@
+.info-page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(#30333a, #23262b);
+    font-family: $main-font-family;
+    font-weight: 400;
+}
+
+.info-page__wrap {
+    position: relative;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 73px;
+    padding: 0 15px;
+
+    @include media-md {
+        margin-top: 40px;
+    }
+
+    @include media-sm {
+        padding: 0 10px;
+        margin-top: 22px;
+    }
+
+    @include landscape {
+        padding: 0 10px;
+        margin-top: 22px;
+    }
+}
+
+.info-page__header {
+    display: flex;
+    align-items: center;
+    padding-left: 33px;
+    margin-bottom: 73px;
+
+    @include media-xl {
+        padding: 0 100px;
+        text-align: center;
+    }
+
+    @include media-md {
+        padding: 0 15px;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+
+    @include media-sm {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 35px;
+    }
+
+    @include landscape {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 35px;
+    }
+}
+
+.info-page__text {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: 1.81em;
+    color: $main-color;
+    text-transform: uppercase;
+
+    @include media-xl {
+        margin-left: 1.8em;
+    }
+
+    @include media-md {
+        margin-left: 0;
+    }
+
+    @include media-exsm {
+        font-size: 18px;
+    }
+
+    @include media-sm {
+        width: 237px;
+        font-weight: 400;
+    }
+}
+
+.info-page__text-word:last-child {
+    @include media-sm {
+        margin-left: 1.8em;
+    }
+}
+
+.info-page__footer {
+    display: flex;
+    justify-content: center;
+    padding: 81px 0;
+
+    @include landscape {
+        padding: 30px 0;
+    }
+
+    @include media-sm {
+        padding: 30px 0;
+    }
+}
+
+.info-page__decor-top {
+    position: absolute;
+    top: 73px;
+    left: 0;
+    width: 211px;
+
+    @include media-xl {
+        width: 148px;
+    }
+
+    @include media-md {
+        top: 20px;
+    }
+
+    @include landscape {
+        top: 8px;
+        width: 104px;
+    }
+
+    @include media-sm {
+        top: 8px;
+        width: 104px;
+    }
+}
+
+.info-page__decor-bot {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 290px;
+
+    @include media-xl {
+        width: 203px;
+    }
+
+    @include media-md {
+        width: 164px;
+    }
+
+    @include media-md {
+        bottom: auto;
+        top: 20px;
+        width: 193px;
+    }
+
+    @include landscape {
+        top: 12px;
+        width: 107px;
+    }
+
+    @include media-sm {
+        top: 12px;
+        width: 107px;
+    }
+}

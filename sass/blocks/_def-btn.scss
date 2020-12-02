@@ -1,0 +1,22 @@
+.def-btn {
+    border: none;
+    background-color: transparent;
+    line-height: 40px;
+    outline: none;
+    cursor: pointer;
+    letter-spacing: $main-letter-spacing;
+    color: rgba($main-color, .5);
+    opacity: 0.5;
+    transition: color $anim;
+
+    @include hover {
+        &:hover,
+        &:focus {
+            color: $main-color;
+        }
+    }
+
+    &:active {
+        opacity: .8;
+    }
+}
